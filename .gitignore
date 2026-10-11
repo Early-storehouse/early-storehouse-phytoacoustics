@@ -34,3 +34,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ---------------------------------------------------------------------------
+# Foundry
+# ---------------------------------------------------------------------------
+/cache/
+/out/
+/broadcast/
+
+# Third-party Solidity dependencies are restored with `forge install` (see
+# README) and are not committed to this repository.
+/lib/
+
+# Generated docs / coverage
+docs/
+lcov.info
+
+# Always keep the environment template, never a real .env
+!.env.example
