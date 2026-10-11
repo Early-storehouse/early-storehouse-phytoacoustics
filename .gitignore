@@ -34,3 +34,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ---------------------------------------------------------------------------
+# Foundry
+# ---------------------------------------------------------------------------
+/cache/
+/out/
+/broadcast/
+
+# Third-party Solidity dependencies live in /lib as git submodules and ARE
+# committed (as gitlinks) so that `git clone --recursive` is all that is needed.
+# NB: /lib itself must not be ignored, or the submodule links will not be tracked.
+
+# Generated docs / coverage
+docs/
+lcov.info
+
+# Always keep the environment template, never a real .env
+!.env.example

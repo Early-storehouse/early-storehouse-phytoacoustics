@@ -1,0 +1,19 @@
+# Normalise every text file to LF on checkout/commit so the repo is byte-identical
+# across Windows, macOS and Linux contributors (and so `forge fmt --check` is stable).
+* text=auto eol=lf
+
+*.sol   text eol=lf
+*.toml  text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.txt   text eol=lf
+
+# Windows-only helper scripts keep CRLF.
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+
+# Never touch binaries.
+*.png   binary
+*.jpg   binary
+*.pdf   binary
+*.zip   binary
