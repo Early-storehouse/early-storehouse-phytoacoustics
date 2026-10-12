@@ -90,7 +90,7 @@ Pinned dependencies:
 | [forge-std](https://github.com/foundry-rs/forge-std) | `v1.9.4` | `lib/forge-std` |
 
 ## Build & test
-
+-- https://book.getfoundry.sh/forge/building-and-testing
 ```bash
 forge build
 forge test -vvv
